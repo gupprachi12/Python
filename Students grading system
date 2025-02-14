@@ -1,0 +1,28 @@
+#creating class
+class Student():
+  def __init__(self, name, student_id, marks): #creating constructor
+    self.name = name
+    self.student_id = student_id
+    self.marks = [marks]
+
+#creating methods / functions
+  def add_grades(self, new_marks):
+    self.marks.append(new_marks)
+  
+  def cal_avergae (self):
+    sum = 0
+    for score in (self.marks):
+      sum = sum + score
+      #print(sum)
+    totalsum = sum
+   # print(totalsum)
+    average = totalsum/len(self.marks)
+    return average
+
+#creating instances / objects
+student1 = Student("prachi", 23324, 45)
+
+#calling functions / methods
+student1.add_grades(23)
+student1.marks
+student1.cal_avergae()
