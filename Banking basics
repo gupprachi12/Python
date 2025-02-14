@@ -1,0 +1,34 @@
+#creating class
+class BankAccount():
+  def __init__(self,account_number,balance): #creating a constructor
+    self.account_number = account_number
+    self.balance = balance
+
+#creating functions / methods
+  def deposit(self, x):
+    self.balance = self.balance + x
+    print(f"{x} deposited in {self.account_number}")
+
+  def withdraw(self, x):
+    if self.balance >= x:
+      self.balance = self.balance - x
+      print(f"{x} withdrawn from {self.account_number}")
+    else:
+      print("insufficient funds, would you like to have a overdraft at 1% pa")
+      response = input("Yes or No").lower()
+      if response == "yes":
+        self.balance = self.balance - x
+        print(f"{self.account_number} has {self.balance}")
+        print(f"after year your overdraft due will be {0.01 * x}")
+      else:
+        print("K! Byesss")
+
+#creating objects / instances
+P1 = BankAccount(23435352, 500)
+
+#calling functions / methods
+P1.deposit(300)
+P1.withdraw(800)
+P1.withdraw(8)
+P1.withdraw(8)
+      
