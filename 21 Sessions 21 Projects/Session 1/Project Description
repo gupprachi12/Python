@@ -1,0 +1,19 @@
+Project Objective: To perform a comprehensive, step-by-step exploratory data analysis to understand the key factors that influenced survival on the Titanic. This notebook will serve as a complete guide, covering data loading, cleaning, analysis, feature engineering, and visualization, with theoretical explanations at each stage.
+
+There are 12 columns and 891 records.
+
+Columns - 
+PassengerId: This column contains the primary key / unique id for each passenger.
+Survived: This column contains information about whether a passenger survived the sinking or not. The value 0 indicates that the passenger did not survive, while the value 1 indicates deceased.
+Pclass: This column contains information about the passenger’s class. The value 1 indicates first class, the value 2 indicates second class, and the value 3 indicates third class.
+Name: This column contains the name of the passenger.
+Sex: This column contains information about the passenger’s gender.
+Age: This column contains the age of the passenger.
+SibSp: This column contains information about the passenger’s siblings and spouse.
+Parch: This column contains information about the passenger’s parents and children.
+Ticket: This column contains the ticket number of the passenger.
+Fare: This column contains the fare paid by the passenger.
+Cabin: This column contains the cabin number of the passenger.
+Embarked: This column contains information about the port of embarkation. The value C indicates Cherbourg, the value Q indicates Queenstown, and the value S indicates Southampton
+
+Survived, Pclass, Sex, Embarked are the categorical columns 
